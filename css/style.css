@@ -1,0 +1,516 @@
+@charset "utf-8";
+* { margin:0; padding:0;}
+a { text-decoration:none; }
+ul,li { list-style:none; }
+.notext { display:none; }
+body {
+    font:16px/1.5 'Nanum Gothic', sans-serif;
+    color:#333;
+}
+/*-----------------공통영역(header)--------------*/
+.wrap {
+    width:1200px;
+    margin:0 auto;
+    background:#fff;
+}
+header {
+    width:1200px;
+    height:230px;
+}
+#logo {
+    text-align:center;
+    padding:10px 0 0 0;
+}
+#gnb {
+    float:left;
+    width:750px;
+    font-size:0;
+    margin:32px 0 0 33px;
+    position:relative;
+}
+#gnb > ul > li {
+    display:inline-block;
+}
+#gnb > ul > li > a {
+    font-size:18px;
+    color:#333;
+    font-weight:bolder;
+    display:block;
+    background:#fff;
+    padding:3px 25px;
+    text-align:center;
+}
+.lnb {
+    display:none;
+    width:200px;
+    height:130px;    
+    position:absolute;
+    z-index:50;
+    margin:0 0 0 20px;
+    background:#fff;
+    border-top:1px solid rgba(51, 51, 51, 0.472);   
+}
+.lnb > li > a {
+    display:block;
+    color:#333;
+    font-size:13px;
+    padding:5px 0 5px 6px;
+    font-weight:bold;
+}
+.lnb > li > a:hover {
+    color:#38a900;
+}
+#tnb {
+    float:right;
+    margin:35px 50px 0 0;
+    position: relative;
+}
+#tnb > ul > li {
+    display:inline-block;    
+}
+#tnb > ul > li > a {
+    font-size:14px;
+    color:#333;
+    font-weight:bolder;
+    display:block;
+    background:#fff;
+    padding:5px 10px;
+    text-align:center;
+}
+.tnb_lnb {
+    display:none;
+    position:absolute;
+    z-index:50;
+    background:#fff;
+    width:123px;
+    height:130px;
+    border-top:1px solid rgba(51, 51, 51, 0.472);   
+}
+.tnb_lnb > li > a {
+    color:#333;
+    display:block;
+    font-size:13px;
+    padding:5px 12px;
+    font-weight:bold;
+}
+.tnb_lnb > li > a:hover {
+    color:#38a900;
+}
+/*-----------------index(홈)--------------*/
+
+#slide{
+    background: #fff;
+    width: 1200px;
+    height: 450px;
+}
+#slideList{
+    width: 1000px;
+    height: 450px;
+    position: relative; 
+}
+.slideImg{  
+    position: absolute;
+}
+#main {
+    width:1200px;
+    position:relative;
+}
+#main::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+#main_top {
+    width:1200px;
+    height:260px;
+    border:1px solid #333;
+    box-sizing:border-box;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#main h3 {
+    font-size:21px;
+    margin:50px 0 0 0;
+    background:#333;
+    color:#fff;
+    width:120px;
+    text-align:center;
+    padding:2px 10px;
+    border-top-left-radius:10px;
+}
+#main_top .main_top_prd1 {
+    float:left;
+    width:300px;
+    margin:30px 0 0 60px;
+    background: url( "../images/index/showping_1.png")no-repeat 165px top;
+}
+#main_top .main_top_prd1 img {
+    float:left;
+}
+#main_top .main_top_prd1 figcaption {
+    margin:150px 0 0 100px;
+    font-size:18px;
+    font-weight:bolder;
+    color:#333;
+}
+#main_top .main_top_prd1 p {
+    margin:0 0 0 100px;
+    color:#333;
+}
+#main_top .main_top_prd2 {
+    float:left;
+    width:300px;
+    margin:30px 0 0 100px;
+    background: url( "../images/index/showping_1.png")no-repeat  165px top;
+}
+#main_top .main_top_prd2 img {
+    float:left;
+}
+#main_top .main_top_prd2 figcaption {
+    margin:150px 0 0 100px;
+    font-size:18px;
+    font-weight:bolder;
+    color:#333;
+}
+#main_top .main_top_prd2 p {
+    margin:0 0 0 100px;
+    color:#333;
+}
+#main_top .main_top_prd3 {
+    float:left;
+    width:300px;
+    margin:30px 0 0 100px;
+    background: url( "../images/index/showping_1.png")no-repeat 165px top;
+}
+#main_top .main_top_prd3 img {
+    float:left;
+}
+#main_top .main_top_prd3 figcaption {
+    margin:150px 0 0 100px;
+    font-size:18px;
+    font-weight:bolder;
+    color:#333;
+}
+#main_top .main_top_prd3 p {
+    margin:0 0 0 100px;
+    color:#333;
+}
+#main_left {
+    float:left;
+    margin:50px 0 0 0;
+    width:20%;
+    height:220px;
+}
+#main_left .search1 {
+    width:282px;
+    height:40px;
+    border-radius:10px;
+    padding:0 0 0 10px;
+    background:url("../images/index/find_1.png") no-repeat left;
+    padding:0 0 0 40px;
+    font-size:14px;
+    color:#333;
+}
+#main_left .center {
+    margin-top:10px;
+}
+#main_left.sns {
+    margin-top:5px;
+}
+#main_right {
+    float:right;
+    width:80%;
+    height:260px;
+    position:absolute;
+    margin:20px 0 0 20px;
+    left:280px;
+}
+#main_right p {
+    width:800px;
+    margin:35px 0 0 50px;
+    font-weight:bolder;
+    border-bottom:1px solid #ddd;
+}
+#main_right .more {
+    float:right;
+    font-size:14px;
+}
+#main_right .more a {
+    color:#333;
+}
+.notice {
+    width:900px;
+    height:220px;
+    text-align:center;
+    margin:5px 0 0 0;
+}
+.notice li {
+    display:inline-block;
+}
+/*-----------------intro(생생유란?)--------------*/
+.box {
+    box-sizing: border-box;
+    width:1200px;
+    height:105px;
+    border-bottom:1px solid #ddd ;
+    border-top:1px solid #ddd ;
+    padding:25px 58px;
+}
+.into_ct1 {
+    margin:100px 150px 50px;
+    overflow:hidden;
+}
+.into_ct1 > img {
+    float:left;
+    width:350px;
+}
+.into_ct1 figcaption {
+    float:left;
+    margin:50px 0 50px 80px;
+    font-size:20px;
+}
+.into_ct1 ul li {
+    float:left;
+    margin:0 0 0 80px;
+    line-height:2;
+}
+.into_ct2 {
+    margin:50px 150px;
+    overflow:hidden;
+}
+.into_ct2 > img {
+    float:right;
+    width:350px;
+    height:370px;
+}
+.into_ct2 figcaption {
+    float: right;
+    margin:50px 80px 50px 0;
+    font-size:20px;
+}
+.into_ct2 ul li {
+    float:right;
+    margin:0 80px 0 0;
+    line-height:2;
+}
+/*-----------------intro_leader(공동대표인사)--------------*/
+.intro_leader_ct1 {
+    margin:100px 200px 50px;
+    font-family:'Nanum Pen Script', cursive;
+}
+.intro_leader_ct1 > img {
+    float:left;
+    width:350px;
+}
+.intro_leader_ct1 figcaption {
+    float:left;
+    margin:100px 0 80px 80px;
+    font-size:35px;
+    line-height:2;
+}
+.intro_leader_ct1 .first {
+    color:#38a900;
+}
+.intro_leader_ct1 .second {
+    padding:0 0 0 100px;
+}
+.intro_leader_ct1 ul {
+    float:left;
+    margin:100px 0 0 150px;
+    line-height:2;
+    border-left:4px solid #38a900;
+    padding:0 0 0 20px;
+    font-size:25px;
+}
+/*-----------------intro_farmer(생산자소개)--------------*/
+.intro_farmer {
+    text-align:center;
+    margin:100px auto;
+}
+/*-----------------cooperative(생활협동조합소개)--------------*/
+.cooperative {
+    text-align:center;
+    margin:100px auto;
+}
+/*-----------------membership(조합원 멤버쉽)--------------*/
+.membership {
+    text-align:center;
+    margin:100px auto;
+    position: relative;
+}
+.membership figcaption {
+    position:absolute;
+    left:780px;
+    top:780px;
+    background:#38a900;
+    border-radius:10px;
+    color:#fff;
+    padding:5px 20px 5px 20px;
+    font-size:20px;
+}
+/*-----------------map(매장 찾기)--------------*/
+#map_section {
+    width:1200px;
+    height:900px;
+    position: relative;
+    overflow: hidden;
+}
+.map_search {
+    margin:100px 300px;
+    width:600px;
+    height:80px;
+    border:1px solid #333;
+    border-radius:5px;
+    background:url("../images/category2/icon5.png") no-repeat 95% 55%;
+}
+.map_search p {
+    float: left;
+    padding:0 70px 0 30px;
+    font-weight:bolder;
+    color:#333;
+    line-height:80px;
+    display:block;
+    font-size:16px;
+}
+.map_search_box {
+    margin:100px 300px;
+    border:2px solid #38a900;
+    width:430px;
+    height:60px;
+    position: absolute;
+    top:10px;
+    left:150px;
+}
+.dropbtn {
+    margin:20px 0;
+    background:#fff;
+    color:#333;
+    font-size: 16px;
+    border:1px solid #333;
+    width:300px;
+    padding:8px 0;
+    border-radius:5px;
+    background-image:url("../images/category2/icon3_1.png");
+    background-repeat:no-repeat;
+    background-position:260px;
+}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top:60px;
+    min-width: 300px;
+    border:1px solid #333;
+    box-sizing:border-box;
+    background:#fff;
+    border-top:none;
+    z-index:100;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding:10px;
+    text-align:center;
+    text-decoration: none;
+    display: block;
+  }
+    
+  .dropdown:hover .dropdown-content {display: block;}
+.map_img {
+    margin:100px 50px;
+    width:500px;
+    overflow: hidden;
+}
+#map_section p {
+    font-size:20px;
+    float:left;
+}  
+#map_section ul {
+    margin:0 0 0 200px;
+    border-left:3px solid #38a900;
+    padding:0 0 0 30px;
+}
+/*-----------------membership(조합원 멤버쉽)--------------*/
+/*----------------prd_(유채유)(들기름)(현미유)(기타)--------------*/
+#prd_ra, #prd_pe, #prd_ri, #prd_etc {
+    text-align:center;
+    margin-top:100px;
+    position: relative;
+}
+.prd_bnt {
+    position: absolute;
+    top:315px;
+    left:480px;
+}
+/*----------------환경보호,농촌활력,NO-GMO--------------*/
+#nature, #farm, #no-gmo {
+    text-align:center;
+    margin-top:100px;
+}
+#no-gmo p {
+    color:#333;
+    font-size:15px;
+    margin-bottom:10px;
+}
+/*--------------나의생생유 전체-------------*/
+#shop, #order {
+    text-align:center;
+    margin:50px 0 200px;
+}
+#mypage {
+    text-align:center;
+    margin-top:50px;
+}
+/*-------------고객센터 전체-------------*/
+#notice {
+    float: left;
+    margin:50px 0 600px 100px;
+}
+#counsel, #join, #join_coop, #signup {
+    text-align:center;
+    margin-top:50px;
+}
+/*---------------공통영역(footer)-------------*/
+footer {
+    float:left;
+    margin:100px 0 0 0;
+    width:1200px;
+    height:110px;
+    background:rgb(63, 63, 63);
+}
+.ft_logo {
+    float:left;
+    margin:45px 0 0 -1080px;
+}
+.ft_gnb {
+    float: left;
+    background:#fff;
+    width:1200px;
+    border-top:1px solid rgb(63, 63, 63);
+    box-sizing:border-box;
+    text-align: center;
+}
+.ft_gnb ul li {
+    display:inline-block;
+    padding:0 0 0 20px;
+}
+.ft_gnb ul li a {
+    font-size:12px;
+    color:#333;
+}
+.ft_gnb ul li a:hover {
+    color:#38a900;
+}
+address {
+    float:left;
+    margin:10px 0 0 320px;
+}
+address p {
+    font-style:normal;
+    font-size:12px;
+    text-transform:capitalize;
+    color:#fff;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>생생유 웹사이트</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script/jquery-1.12.4.js"></script>
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="notext">생생유</h1>
+        <header>
+                <h2 class="notext">헤더영역:로고,주메뉴,부메뉴</h2>
+                <div id="logo"><a href="index.html"><img src="images/index/logo.png" alt="메인로고"></a></div>
+                <nav id="gnb">
+                    <h3 class="notext">주메뉴</h2>
+                    <ul>
+                        <li><a href="index.html">생생유이야기</a>
+                            <ul class="lnb">
+                                <li><a href="intro.html">생생유란?</a></li>
+                                <li><a href="intro_leader.html">공동대표 인사</a></li>
+                                <li><a href="intro_farmer.html">생산자 소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">생활협동조합 소개</a>
+                            <ul class="lnb">
+                                <li><a href="cooperative.html">생활협동조합 소개</a></li>
+                                <li><a href="membership.html">조합원 멤버쉽</a></li>
+                                <li><a href="map.html">매장찾기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">물품·장보기</a>
+                            <ul class="lnb">
+                                <li><a href="prd_ra.html">유채유</a></li>
+                                <li><a href="prd_pe.html">들기름</a></li>
+                                <li><a href="prd_ri.html">현미유</a></li>
+                                <li><a href="prd_etc.html">기타</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">캠패인</a>
+                            <ul class="lnb">
+                                <li><a href="nature.html">환경보호</a></li>
+                                <li><a href="farm.html">농촌활력</a></li>
+                                <li><a href="no-gmo.html">NO-GMO</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="tnb">
+                    <h3 class="notext">부메뉴</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                            <ul class="tnb_lnb">
+                                    <li><a href="index.html">Home</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">로그인</a>
+                            <ul class="tnb_lnb">
+                                    <li><a href="signup.html">로그인</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">나의 생생유</a>
+                            <ul class="tnb_lnb">
+                                <li><a href="shop.html">장바구니</a></li>
+                                <li><a href="order.html">주문/배송</a></li>
+                                <li><a href="mypage.html">개인정보 조회</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">고객센터</a>
+                            <ul class="tnb_lnb">
+                                <li><a href="notice.html">공지사항</a></li>
+                                <li><a href="counsel.html">상담/문의</a></li>
+                                <li><a href="join.html">회원가입/탈퇴</a></li>
+                                <li><a href="join_coop.html">조합원가입/탈퇴</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        <div id="slide">
+            <div id="slideList">    
+                    <div class="slideImg">
+                        <img src="images/index/slide1200_1.png" alt="">
+                    </div>
+                    <div class="slideImg">
+                        <img src="images/index/slide1200_2.png" alt="">
+                    </div>
+                    <div class="slideImg">
+                        <img src="images/index/slide1200_3.png" alt="">
+                    </div>
+            </div>
+        </div>
+        <div id="main">
+            <h2 class="notext">본문:제품소개,검색,배너,공지</h2>
+            <h3>생생 식용유</h3>
+            <div id="main_top">
+                <figure class="main_top_prd1"><a href="prd_ra.html">
+                    <img src="images/index/prd1_1.png" alt="">
+                    <figcaption>압착 유채유(400L)</figcaption>
+                    <P>15,000원</P>
+                </a></figure>
+                <figure class="main_top_prd2"><a href="prd_pe.html">
+                    <img src="images/index/prd2_2.png" alt="">
+                    <figcaption>압착 들기름(400L)</figcaption>
+                    <P>15,000원</P>
+                </a></figure>
+                <figure class="main_top_prd3"><a href="prd_ri.html">
+                    <img src="images/index/prd3_3.png" alt="">
+                    <figcaption>압착 현미유(400L)</figcaption>
+                    <P>15,000원</P>
+                </a></figure>
+            </div>
+            <div id="main_left">
+                <input type="search" value="검색" class="search1">
+                <div class="center">
+                    <a href="counsel.html"><img src="images/index/center.png" alt="고객센터 배너"></a>
+                </div>
+                <div class="sns">
+                    <a href="https://ko-kr.facebook.com/"><img src="images/index/sns.png" alt="sns 배너"></a>
+                </div>
+            </div>
+            <div id="main_right">
+                <p>생생유 소식·공지사항 <span class="more"><a href="notice.html">더보기+</a></span></p>
+                <ul class="notice">
+                    <li><a href="#"><img src="images/index/notice1.png"></a></li>
+                    <li><a href="#"><img src="images/index/notice2.png"></a></li>
+                    <li><a href="#"><img src="images/index/notice3.png"></a></li>
+                    <li><a href="#"><img src="images/index/notice4.png"></a></li>
+                    <li><a href="#"><img src="images/index/notice2.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <h2 class="notext">푸터영역</h2>
+            <nav class="ft_gnb">
+                <ul>
+                    <li><a href="index.html">이용약관</a></li>
+                    <li><a href="index.html">이용안내</a></li>
+                    <li><a href="index.html">개인정보취급방침</a></li>
+                    <li><a href="index.html">소식지PDF</a></li>
+                </ul>
+            </nav>
+            <div class="ft_logo">
+                <img src="images/index/ft_logo.png" alt="푸터로고">
+            </div>
+            <address>
+               <p>
+                주소:전라남도 함평군 해보면 문장리 111-10 대표자:홍길동</br>
+                사업자등록번호:126-82-12987 대표전화:080-3894-3489 전자우편:sangsang@hanmail.net</br>
+                copyright 생생유 all right reserved
+                </p>
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
